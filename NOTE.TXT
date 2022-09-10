@@ -1,0 +1,6 @@
+RUN MIGRATION : npx sequelize-cli db:migrate
+UNDO MIGRATION: npx sequelize-cli db:migrate:undo
+RUN SEEDER : npx sequelize-cli db:seed:all
+UNDO SEEDER : npx sequelize-cli db:seed:undo
+GENERATE NEW SEED : npx sequelize-cli seed:generate --name demo-user
+GENERATE NEW MIGRATION : npx sequelize-cli model:generate --name list-train-name --attributes name:string,email:string
